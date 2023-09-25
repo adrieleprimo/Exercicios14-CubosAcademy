@@ -11,7 +11,7 @@ Para fonte dos dados, utilizaremos a função `buscarEndereco`, da biblioteca `u
 https://www.npmjs.com/package/utils-playground
 
 A nossa API deverá possuir apenas um recurso **enderecos** com apenas um método **GET** que recebe como parâmetro tipo path (params) **cep** que será o número do CEP (sem pontuação, apenas números).
-A requisição G**GET**ET à nossa API deverá ser realizada através do endereço `http://localhost:3000/enderecos/`
+A requisição **GET** à nossa API deverá ser realizada através do endereço `http://localhost:3000/enderecos/`
 
 Ao receber a requisição, nossa API deverá primeiro procurar o endereço em um array de endereços do arquivo **enderecos.json** que deverá existir em nosso servidor e caso não encontre, requisitar o endereço usando a função `buscarEndereco`.
 
