@@ -9,6 +9,8 @@ const produtos = async (req, res) => {
     return res
       .status(404)
       .json({ message: `Produtos não encontrados: ${erro}` });
+  } finally {
+    res.send();
   }
 };
 
@@ -30,6 +32,8 @@ const produtoId = async (req, res) => {
     return res
       .status(400)
       .json({ message: `Erro ao acessar produto: ${erro}` });
+  } finally{
+    res.send();
   }
 };
 
@@ -78,6 +82,8 @@ const calculoFrete = async (req, res) => {
     });
   } catch (erro) {
     return res.status(400).json({ message: `Erro ao calcular frete: ${erro}` });
+  } finally{
+    res.send();
   }
 };
 module.exports = { produtos, produtoId, calculoFrete, calculoFrete };
